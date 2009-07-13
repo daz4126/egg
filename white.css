@@ -68,9 +68,10 @@ th,thead td,tfoot td{background:#43abda;color:#fff;
 font-weight:bold;}
 /*code*/
 code{font-family:consolas,"Courier New", Courier, monospace;
-background:#000;
-color:#fff;
-padding:0 0 0 1em;}
+background:#000;color:#fff;
+margin:0 2em 1em;
+padding:0.5em;
+display:block;}
 /* expected behaviour for these elements*/
 kbd,tt{font-family:"Courier New", Courier, monospace;}
 del{text-decoration:line-through;}
