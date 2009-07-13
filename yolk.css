@@ -1,0 +1,109 @@
+/***************************************
+
+---------------------------
+Egg Yolk
+---------------------------
+
+version:	Chicken
+date:     July 2009
+author:	  DAZ
+contact:	daz4126-at-gmail.com
+
+This stylesheet provides some utility classes to add different effects such as tabs and rounded corners.
+
+****************************************/
+
+
+/***************************************
+ horizontal tabs
+****************************************/
+ul.htabs
+{list-styletype:none;overflow:hidden;zoom:1;
+margin:0;padding:0;
+background:#f9de02;border-left:#fffff3 solid 1px;}
+/*will act as the current tab*/
+ul.htabs li
+{display:inline;float:left;line-height:2.4;
+/*This should be the same as the margin for the a below*/
+padding: 0 1em;margin:0;
+/*some basic styling*/
+background:#fffff3;color:#369;
+font-weight:bold;font-size:1.4em;
+border-right:#fffff3 solid 1px;}
+ul.htabs a:link,ul.htabs a,ul.htabs a:visited
+{float: left;text-decoration:none;
+/*This should be the same as the padding for the li above*/
+padding: 0 1em;
+/*this undoes the padding of the containing list element*/
+margin: 0 -1em;
+/*some basic styling*/
+background:#f9de02;color:#fffff3;}
+ul.htabs a:hover,ul.htabs a:focus
+{text-decoration: none;background:#369;color:#fffff3;}
+
+/***************************************
+ vertical tabs
+****************************************/
+ul.vtabs{
+list-style:none outside;
+overflow:hidden;margin:0;padding:0;width:auto;
+border-bottom:#fffff3 solid 1px;zoom:1;}
+ul.vtabs li
+{line-height:2em;padding:0;margin:0;width:100%;
+/*some basic styling*/
+background:#fffff3;color:#369;
+font-weight:bold;font-size:1.4em;
+border-top:#fffff3 solid 1px;
+padding-left:0.5em;
+}
+/*ie6&7 fix*/
+ul.vtabs li
+{*float:left;*clear:left;*width:100%;_text-indent:0.5em;}
+
+ul.vtabs a:link,ul.vtabs a:visited
+{display:block;padding:0;margin:0;
+padding-left:0.5em;margin-left:-0.5em;
+text-decoration:none;width:auto;
+/*some basic styling*/
+background:#f9de02;color:#fffff3;}
+
+ul.vtabs a:hover,ul.vtabs a:focus
+{background:#369;color:#fffff3;}
+/*yet another ie6 fix*/
+ul.vtabs a:link,* html  ul.vtabs a:visited,ul.vtabs a
+{_text-indent:0.5em;_width:100%;}
+
+ul.vtabs a:hover, ul.vtabs a:focus
+{text-decoration:none;}
+
+
+/***************************************
+ image replacement
+****************************************/
+/*This will just hide the text, you will need to speciafy the background image separately. The width and height of the element should match the dimensions of the image*/
+.image-replacement
+{margin:0;padding:0;text-indent:-12345px;}
+
+/***************************************
+ Search box
+****************************************/
+form.search
+{padding:1em 0;position:relative;}
+.search label
+{position: absolute;left:-10000em;}
+form.search input#search
+{width:70%;min-width:30px;padding:5px 0;margin:0 5% 0 0;border:none;text-indent:1em;
+ -webkit-border-radius:0.5em;-moz-border-radius:0.5em;border-radius:0.5em;}
+form.search input.btn
+{width:20%;min-width:30px;margin:0 auto;}
+
+/***************************************
+ Rounded Corners
+****************************************/
+.isRounded{-webkit-border-radius: 1em; -moz-border-radius: 1em;border-radius: 1em;}
+.hasRounded>*{-webkit-border-radius: 1em; -moz-border-radius: 1em;border-radius: 1em;}
+
+/***************************************
+ Transistions
+****************************************/
+.transition{-webkit-transition: all,0.5s;}

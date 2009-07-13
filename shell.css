@@ -1,0 +1,142 @@
+/***************************************
+
+---------------------------
+Egg Shell 
+---------------------------
+
+version:	Chicken
+date:     July 2009
+author:	  DAZ
+contact:	daz4126-at-gmail.com
+
+This stylesheet provides some classes to build flexible grid-based layouts.
+
+****************************************/
+
+
+/* Layout types */
+.fixed,.liquid,.elastic{margin:0 auto;zoom:1;}
+.fixed{width:980px;}
+.liquid{width:90%;max-width:980px}
+.elastic{width:98em;max-width:100%;}
+
+/* Grid & Row basics - gives them Layout and contains floats*/
+.grid,.row{overflow:hidden;zoom:1;}
+/* Columns/blocks inside grids */
+.grid>*,.row>*
+{float:left;margin:0 0 2.0408% 2.0408%;padding:0;zoom:1;}
+.row>*{margin-bottom:0;}
+/*Use to replace margins with padding instead, so columns have no gaps between them*/
+.grid.padded>*,.grid.padded .row>*{margin-left:0;padding-left:1.0204%;padding-right:1.0204%;position:relative;left:1.0204%;}
+/*These make any columns with gaps line up*/
+.padded .g1,.padded .g2,.padded .g3,
+.padded .g4,.padded .g5,.padded .g6,
+.padded .g7,.padded .g8,.padded .g9,
+.padded .g10,.padded .g11,.padded .g12,
+.padded .g13,.padded .g14,.padded .g15
+{left:-1.0204%;}
+/* These row styles have to come last to over-ride some other styles*/
+.grid .row{width:100%;margin-left:0;left:0;padding:0;}
+
+/***************************************
+ Spans
+****************************************/
+
+.ten-col>*,.ten-col>.row>*{width:7.755%;}
+.ten-col .s2,.five-col>*,.five-col>.row>*{width:17.551%;}
+.ten-col .s3{width:27.347%;}
+.ten-col .s4,.five-col>.s2,.five-col>.row>.s2{width:37.143%;}
+.ten-col .s6,.five-col>.s3,.five-col>.row>.s3{width:56.735%;}
+.ten-col .s7{width:66.531%;}
+.ten-col .s8,.five-col>.s4,.five-col>.row>.s4{width:76.327%;}
+.ten-col .s9{width:86.122%;}
+.twelve-col>*,.twelve-col>.row>*{width:6.122%;}
+.twelve-col>.s2,.twelve-col>.row>.s2,.six-col>*,.six-col>.row>*{width:14.286%;}
+.twelve-col>.s3,.sixteen-col>.s4,.eight-col>.s2,.four-col>*,.twelve-col>.row>.s3,.sixteen-col>.row>.s4,.eight-col>.row>.s2,.four-col>.row>*{width:22.449%;}
+.twelve-col>.s4,.twelve-col>.row>.s4,.six-col>.s2,.six-col>.row>.s2,.three-col>*,.three-col>.row>*{width:30.612%;}
+.twelve-col .s5{width:38.776%;}
+.twelve-col>.s6,.twelve-col>.row>.s6,.four-col .s2,.six-col>.s3,.six-col>.row>.s3,.ten-col>.s5,.ten-col>.row>.s5,.sixteen-col>.s8,.sixteen-col>.row>.s8,.eight-col>.s4,.eight-col>.row>.s4,.two-col>*,.two-col>.row>*{width:46.939%;}
+.twelve-col>.s7,.twelve-col>.row>.s7{width:55.102%;}
+.twelve-col>.s8,.twelve-col>.row>.s8,.three-col>.s2,.three-col>.row>.s2,.six-col .s4{width: 63.265%;}
+.twelve-col>.s9,.twelve-col>.row>.s9,.four-col>.s3,.four-col>.row>.s3,.sixteen-col .s12,.eight-col>.s6,.eight-col>.row>.s6{width:71.429%;}
+.twelve-col>.s10,.twelve-col>.row>.s10,.six-col>.s5,.six-col>.row>.s5{width:79.592%;}
+.twelve-col .s11{width:87.755%;}
+.two-col>.s2,.two-col>.row>.s2,.three-col>.s3,.three-col>.row>.s3,.four-col>.s4,.four-col>.row>.s4,.five-col>.s5,.five-col>.row>.s5,.six-col>.s6,.six-col>.row>.s6,.eight-col>.s8,.eight-col>.row>.s8,.ten-col>.s10,.ten-col>.row>.s10,.twelve-col>.s12,.twelve-col>.row>.s12,.sixteen-col .s16,.full{width:95.918%;}
+.sixteen-col>*,.sixteen-col>.row>*{width:4.082%;}
+.sixteen-col>.s2,.sixteen-col>.row>.s2,.eight-col>*,.eight-col>.row>*{width:10.204%;}
+.sixteen-col>.s3,.sixteen-col>.row>.s3{width:16.327%;}
+.sixteen-col>.s5,.sixteen-col>.row>.s5{width:28.571%;}
+.sixteen-col>.s6,.sixteen-col>.row>.s6,.eight-col>.s3,.eight-col>.row>.s3{width:34.694%;}
+.sixteen-col>.s7,.sixteen-col>.row>.s7{width:40.816%;}
+.sixteen-col>.s9,.sixteen-col>.row>.s9{width:53.061%;}
+.sixteen-col>.s10,.sixteen-col>.row>.s10,.eight-col .s5{width:59.184%;}
+.sixteen-col>.s11,.sixteen-col>.row>.s11{width:65.306%;}
+.sixteen-col .s13{width:77.551%;}
+.sixteen-col .s14,.eight-col .s7{width:83.673%;}
+.sixteen-col .s15{width:89.796%;}
+
+/*  gaps  */
+.ten-col .g1{margin-left:11.837%;}
+.ten-col .g2,.five-col>.g1,.five-col>.row>.g1{margin-left:21.633%;}
+.ten-col .g3{margin-left:31.429%;}
+.ten-col .g4,.five-col>.g2,.five-col>.row>.g2{margin-left:41.224%;}
+.ten-col .g6,.five-col>.g3,.five-col>.row>.g3{margin-left:60.816%;}
+.ten-col .g7{margin-left:70.612%;}
+.ten-col .g8,.five-col>.g4,.five-col>.row>.g4{margin-left:80.408%;}
+.ten-col .g9{margin-left:90.204%;}
+.twelve-col>.g1,.twelve-col>.row>.g1{margin-left:10.204%;}
+.twelve-col>.g2,.twelve-col>.row>.g2,.six-col>.g1,.six-col>.row>.g1{margin-left:18.367%;}
+.twelve-col>.g3,.twelve-col>.row>.g3,.four-col>.g1,.four-col>.row>.g1,.sixteen-col>.g4,.sixteen-col>.row>.g4,.eight-col>.g2,.eight-col>.row>.g2
+{ margin-left:26.531%;}
+.twelve-col>.g4,.twelve-col>.row>.g4,.three-col>.g1,.three-col>.row>.g1,.six-col>.g2,.six-col>.row>.g2{margin-left:34.694%;}
+.twelve-col .g5{margin-left:42.857%;}
+.two-col>.g1,.two-col>.row>.g1,.four-col>.g2,.four-col>.row>.g2,.six-col>.g3,.six-col>.row>.g3,.eight-col>.g4,.eight-col>.row>.g4,.ten-col>.g5,.ten-col>.row>.g5,.twelve-col>.g6,.twelve-col>.row>.g6,.sixteen-col>.g8,.sixteen-col>.row>.g8
+{margin-left:51.020%;}
+.twelve-col>.g7,.twelve-col>.row>.g7{margin-left:59.184%;}
+.twelve-col>.g8,.twelve-col>.row>.g8,.three-col>.g2,.three-col>.row>.g2,.six-col>.g4,.six-col>.row>.g4{margin-left:67.347%;}
+.twelve-col>.g9,.twelve-col>.row>.g9,.four-col>.g3,.four-col>.row>.g3,.sixteen-col .g12,.eight-col>.g6,.eight-col>.row>.g6
+{margin-left:75.510%;}
+.twelve-col .g10,.six-col>.g5,.six-col>.row>.g5{margin-left:83.673%;}
+.twelve-col .g11{margin-left:91.837%;}
+.sixteen-col>.g1,.sixteen-col>.row>.g1{margin-left:8.163%;}
+.sixteen-col>.g2,.sixteen-col>.row>.g2, .eight-col .g1{margin-left: 14.286%;}
+.sixteen-col>.g3,.sixteen-col>.row>.g3{margin-left:20.408%;}
+.sixteen-col>.g5,.sixteen-col>.row>.g5{margin-left:32.653%;}
+.sixteen-col>.g6,.sixteen-col>.row>.g6,.eight-col .g3{margin-left:38.776%;}
+.sixteen-col>.g7,.sixteen-col>.row>.g7{margin-left:44.898%;}
+.sixteen-col>.g9,.sixteen-col>.row>.g9{margin-left:57.143%;}
+.sixteen-col>.g10,.sixteen-col>.row>.g10,.eight-col .g5{margin-left:63.265%;}
+.sixteen-col>.g11,.sixteen-col>.row>.g11{margin-left:69.388%;}
+.sixteen-col .g13{margin-left:81.633%;}
+.sixteen-col .g14,.eight-col .g7{margin-left:87.755%;}
+.sixteen-col .g15{margin-left:93.878%;}
+
+
+
+/* images */
+img{display:block;max-width:100%;_width:100%;margin:1em 0;}
+img.half{max-width:48%;_width:48%;margin:0 2% 2% 0;float:left;clear:both;}
+img.third{max-width:31%;_width:31%;margin:0 2% 2% 0;float:left;clear:both;}
+img.quarter{max-width:23%;_width:23%;margin:0 2% 2% 0;float:left;clear:both;}
+img.right{float:right;margin:0 0 2% 2%;clear:both;}
+
+/***************************************
+ Utility Classes
+****************************************/
+
+/*makes an element to start a new line*/
+.first{clear:left;}
+/*makes an element float right instead of left*/
+.grid>.right,.grid>.row>.right
+{float:right;margin-left:0;margin-right:2.0408%;}
+/*makes an element span the whole width of a grid, with no margins*/
+.fullWidth
+{width:100%;margin:0;padding:0;clear:both;display:block;overflow:hidden;zoom:1;}
+/*makes an element the same height as its container*/
+.fullHeight
+{padding-bottom:12345px;margin-bottom:-12345px;}
+/*Makes child elements all the same height
+WARNING - use with caution and only if there is one row of elements
+*/
+html body .equalHeight>*
+{padding-bottom:12345px;margin-bottom:-12345px;}
