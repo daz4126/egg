@@ -114,10 +114,14 @@ This stylesheet provides some classes to build flexible grid-based layouts.
 
 
 /* images */
-img{display:block;max-width:100%;_width:100%;margin:1em 0;}
-img.half{max-width:48%;_width:48%;margin:0 2% 2% 0;float:left;clear:both;}
-img.third{max-width:31%;_width:31%;margin:0 2% 2% 0;float:left;clear:both;}
-img.quarter{max-width:23%;_width:23%;margin:0 2% 2% 0;float:left;clear:both;}
+img
+{display:block;max-width:100%;_width:100%;margin:1em 0;}
+img.half
+{max-width:48%;_width:48%;margin:0 2% 2% 0;float:left;clear:both;}
+img.third
+{max-width:31%;_width:31%;margin:0 2% 2% 0;float:left;clear:both;}
+img.quarter
+{max-width:23%;_width:23%;margin:0 2% 2% 0;float:left;clear:both;}
 img.right{float:right;margin:0 0 2% 2%;clear:both;}
 
 /***************************************

@@ -19,9 +19,7 @@ This stylesheet is used to fix the many things that are wrong with Internet Expl
 .grid *{_margin-bottom:2.04%;}
 
 .grid.padded *,.grid.padded .row *{_padding-left:1.0204%;_padding-right:1.0204%;_position:relative;_left:1.0204%;_margin-left:0;}
-.padded * *,.padded .row * *{_padding-left:0;_padding-right:0;_left:0;}
-
-
+.padded * *,.padded .row * *{_padding-left:0;_padding-right:0;_left:0;}
 
 /*nesting - only 2-levels currently and some break at small sizes*/
 .grid .grid *{float:left;margin-left:0.9%;_padding:1em 0;zoom:1;overflow:hidden;display:inline;}
@@ -87,7 +85,7 @@ This stylesheet is used to fix the many things that are wrong with Internet Expl
 .grid .sixteen-col *,.grid .sixteen-col .row *{_width:4.081%;}
 .grid .sixteen-col .s2,.grid .eight-col *,.grid .sixteen-col .row .s2,.grid .eight-col .row *{_width:10.204%;}
 
-/*   gap Fixes */
+/* gap Fixes */
 .ten-col .row .g1{_margin-left:11.837%;}
 .ten-col .g2,.five-col .g1,.ten-col .row .g2,.five-col .row .g1{_margin-left:21.633%;}
 .ten-col .row .g3{_margin-left:31.429%;}
@@ -121,20 +119,52 @@ This stylesheet is used to fix the many things that are wrong with Internet Expl
 .sixteen-col .row .g13{_margin-left:81.633%;}
 .sixteen-col .row .g14,.eight-col .row .g7{_margin-left:87.755%;}
 .sixteen-col .row .g15{_margin-left:93.878%;}
+
+/* gaps - nested, level 1 - should all start with .grid */
+.grid .ten-col .row .g1{_margin-left:11.837%;}
+.grid .ten-col .g2,.grid .five-col .g1,.grid .ten-col .row .g2,.grid .five-col .row .g1{_margin-left:21.633%;}
+.grid .ten-col .row .g3{_margin-left:31.429%;}
+.grid .ten-col .g4,.grid .five-col .g2,.grid .ten-col .row .g4,.grid .five-col .row .g2{_margin-left:41.224%;}
+.grid .ten-col .g6,.grid .five-col .g3,.grid .ten-col .row .g6,.grid .five-col .row .g3{_margin-left:60.816%;}
+.grid .ten-col .row .g7{_margin-left:70.612%;}
+.grid .ten-col .g8,.grid .five-col .g4,.grid .ten-col .row .g8,.grid .five-col .row .g4{_margin-left:80.408%;}
+.grid .ten-col .row .g9{_margin-left:90.204%;}
+.grid .twelve-col .g1,.grid .twelve-col .row .g1{_margin-left:10.204%;}
+.grid .twelve-col .g2,.grid .six-col .g1,.grid .twelve-col .row .g2,.grid .six-col .row .g1{_margin-left:18.367%;}
+.grid .twelve-col .g3,.grid .four-col .g1,.grid .sixteen-col .g4,.grid .eight-col .g2,.grid .twelve-col .row .g3,.grid .four-col .row .g1,.grid .sixteen-col .row .g4,.grid .eight-col .row .g2
+{_margin-left:26.531%;}
+.grid .twelve-col .g4,.grid .three-col .g1,.grid .six-col .g2,.grid .twelve-col .row .g4,.grid .three-col .row .g1,.grid .six-col .row .g2{_margin-left:34.694%;}
+.grid .twelve-col .row .g5{_margin-left:42.857%;}
+.grid .two-col .g1,.grid .four-col .g2,.grid .six-col .g3,.grid .eight-col .g4,.grid .ten-col .g5,.grid .twelve-col .g6,.grid .sixteen-col .g8,.grid .two-col .row .g1,.grid .four-col .row .g2,.grid .six-col .row .g3,.grid .eight-col .row .g4,.grid .ten-col .row .g5,.grid .twelve-col .row .g6,.grid .sixteen-col .row .g8
+{_margin-left:51.020%;}
+.grid .twelve-col .g7,.grid .twelve-col .row .g7{_margin-left:59.184%;}
+.grid .twelve-col .g8,.grid .three-col .g2,.grid .six-col .g4,.grid .twelve-col .row .g8,.grid .three-col .row .g2,.grid .six-col .row .g4{_margin-left:67.347%;}
+.grid .twelve-col .g9,.grid .four-col .g3,.grid .eight-col .g6,.grid .sixteen-col .g12,.grid .twelve-col .row .g9,.grid .four-col .row .g3,.grid .eight-col .row .g6,.grid .sixteen-col .row .g12
+{_margin-left:75.510%;}
+.grid .twelve-col .g10,.grid .six-col .g5,.grid .twelve-col .row .g10,.grid .six-col .row .g5{_margin-left:83.673%;}
+.grid .sixteen-col .g1,.grid .sixteen-col .row .g1{_margin-left:8.163%;}
+.grid .sixteen-col .g2,.grid .eight-col .g1,.grid .sixteen-col .row .g2,.grid .eight-col .row .g1{_margin-left: 14.286%;}
+.grid .sixteen-col .g3,.grid .sixteen-col .row .g3{_margin-left:20.408%;}
+.grid .sixteen-col .g5,.grid .sixteen-col .row .g5{_margin-left:32.653%;}
+.grid .sixteen-col .g6,.grid .eight-col .g3,.grid .sixteen-col .row .g6,.grid .eight-col .row .g3{_margin-left:38.776%;}
+.grid .sixteen-col .g7,.grid .sixteen-col .row .g7{_margin-left:44.898%;}
+.grid .sixteen-col .g9,.grid .sixteen-col .row .g9{_margin-left:57.143%;}
+.grid .sixteen-col .g10,.grid .eight-col .g5,.grid .sixteen-col .row .g10,.grid .eight-col .row .g5{_margin-left:63.265%;}
+.grid .sixteen-col .g11,.grid .sixteen-col .row .g11{_margin-left:69.388%;}
+.grid .sixteen-col .row .g13{_margin-left:81.633%;}
+.grid .sixteen-col .row .g14,.grid .eight-col .row .g7{_margin-left:87.755%;}
+.grid .sixteen-col .row .g15{_margin-left:93.878%;}
+
 /*stops double margin bug on gaps*/
-.g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8,.g9,.g10,.g11,.g12,*  .g13,*  .g14,*  .g15{_display:inline;}
-/*resets the grandchildren of grids*/
-* html .grid * *,* html .grid .row * *
+.g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8,.g9,.g10,.g11,.g12,.g13,.g14,.g15{_display:inline;}
+/*resets the grandchildren and great grandchildren of grids*/
+* html .grid * *,* html .grid .row * *,* html .grid .grid * *,* html .grid .row .grid * *,* html .grid .row .grid .row * *
 {float:none;margin:auto;width:auto;display:inline-block;}
-* html .grid * *{margin-top:auto;}
-/*resets grandchildren of nested grids*/
-* html .grid .grid * *,* html .grid .row .grid * *,* html .grid .row .grid .row * *{float: none;margin:auto;margin-right:auto;width:auto;}
+/*Fallback for second level nesting*/
+* html .grid .grid .grid *,* html .grid .row .grid .grid *,* html .grid .row .grid .row .grid *,* html .grid .grid .row .grid *
+{float:none;display:inline-block;
+width:auto;margin:0;padding:0}
 
 /*grid and row need repeating to stop them being over-ridden*/
 .grid,.row{overflow:hidden;zoom:1;}
 .row{width:100%;margin-left:0;}
-
-/*image fixes*/
-.grid img.full{_width: 100%;}
-.grid img.half{_width:47.8%;_float:left;}
-.grid img.right{_float:right;}

@@ -34,20 +34,21 @@ blockquote,q{quotes:"" "";}
 /*make 1em equal approx 10px*/
 body{font-size:62.5%;line-height:2;color:#333;}
 /*headings*/
-h1{font-size:4em;line-height:1;margin:0.5em;}
-h2{font-size:3.2em;line-height:1.25;margin:0.3125em 0.625em 0;}
-h3{font-size:2.5em;line-height:1.6;margin:0.4em 0.8em 0;}
-h4{font-size:2.0em;line-height:1;margin:0.5em 1em 0;}
-h5{font-size:1.6em;line-height:1.25;margin:0.625em 1.25em 0;}
-h6{font-size:1.25em;line-height:1.6;margin:0.8em 1.6em 0;}
+h1{font-size:4em;line-height:1;margin:0.5em 0;}
+h2{font-size:3.2em;line-height:1.25;margin-top:0.3125em;}
+h3{font-size:2.5em;line-height:1.6;margin-top:0.4em;}
+h4{font-size:2.0em;line-height:1;margin-top:0.5em;}
+h5{font-size:1.6em;line-height:1.25;margin-top:0.625em;}
+h6{font-size:1.25em;line-height:1.6;margin-top:0.8em;}
 /*paragraphs and lists*/
-p,li,dt,dd{font-size:1.25em;line-height:1.6;}
-p{margin:0 1.6em 0.8em;word-wrap:break-word;}
-ul,ol{margin:0 2em 1em;}
-dl{margin:0 2em 1em;}
+p,li,dt,dd
+{font-size:1.25em;line-height:1.6;}
+p{margin-bottom:0.8em;word-wrap:break-word;}
+ul,ol{margin-bottom:1em;}
+dl{margin-bottom:1em;}
 li ul,li ol,dt dl{margin:0;}
-ol{list-style:decimal outside;}
-ul{list-style:square outside;}
+ol{list-style:decimal inside;}
+ul{list-style:square inside;}
 li li{margin-left:1em;font-size:1em;}
 dd{margin-left:1em;}
 /*links*/
@@ -58,18 +59,18 @@ a:hover,a:focus{text-decoration:none;}
 a:link img, a img{border-bottom: transparent solid 3px;}
 a:hover img, a:focus img{border-bottom:#369 solid 3px;}
 /* tables*/
-table{border-left:#4794b7 solid 1px;border-top:#4794b7 solid 1px;border-collapse:collapse;
+table{border-left:#369 solid 1px;border-top:#369 solid 1px;border-collapse:collapse;
 font-size:1.25em;
-margin:0.8em 1.6em;} 
+margin:0.8em 0;} 
 caption{font-size:0.8em;font-style:italic;text-align:right;}
-th,td{border-right:#4794b7 solid 1px;border-bottom:#4794b7 solid 1px;padding:0 0.2em;line-height:1.52;text-align:center;background:#fff;color:#666;}
-tr:hover td{background:#74e932;}
-th,thead td,tfoot td{background:#43abda;color:#fff;
+th,td{border-right:#369 solid 1px;border-bottom:#369 solid 1px;padding:0 0.2em;line-height:1.52;text-align:center;background:#fff;color:#666;}
+tr:hover td{background:#369;color:#fffff3}
+th,thead td,tfoot td{background:#f9de02;color:#fffff3;
 font-weight:bold;}
 /*code*/
 code{font-family:consolas,"Courier New", Courier, monospace;
 background:#000;color:#fff;
-margin:0 2em 1em;
+margin-bottom:1em;
 padding:0.5em;
 display:block;}
 /* expected behaviour for these elements*/
