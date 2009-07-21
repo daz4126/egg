@@ -15,50 +15,28 @@ This stylesheet provides some utility classes to add different effects such as t
 
 
 /***************************************
- horizontal tabs
+ Tabs
 ****************************************/
 ul.tabs
-{
-list-style:none outside;overflow:hidden;zoom:1;
-margin:0;padding:0;
-background:#f9de02;
-display:relative;
-font-size:1.4em;
-width:auto;
-}
+{list-style:none outside;background:#f9de02;font-size:1.4em;
+overflow:hidden;zoom:1;display:relative;
+margin:0;padding:0;width:auto;}
 
 ul.tabs li
-{
-background:#fffff3;color:#369;
-line-height:2.4;
-display:inline;float:left;
-padding: 0 1em;
-}
+{background:#fffff3;color:#369;line-height:2.4;
+display:inline;float:left;padding: 0 1em;}
 
 ul.tabs li a:link,ul.tabs li a, ul.tabs li a:visited
-{
-text-decoration:none;
-background:#f9de02;color:#fffff3;
-display:block;
-padding: 0 1em;
-margin: 0 -1em;
-width:100%;
-}
+{text-decoration:none;background:#f9de02;color:#fffff3;
+display:block;width:100%;
+padding: 0 1em;margin: 0 -1em;}
 
 ul.tabs li a:hover
-{
-text-decoration:none;
-background:#369;color:#fffff3;
-}
-
-
-ul.tabs.vertical li
-{
-*clear:left;
-display:block;
-width:100%;
-}
-
+{text-decoration:none;
+background:#369;color:#fffff3;}
+/* Add a class of 'vertical' or 'v' to make the tabs vertical*/
+ul.tabs.vertical li,ul.tabs.v li
+{clear:left;display:block;width:100%;}
 
 /***************************************
  image replacement
@@ -68,7 +46,18 @@ width:100%;
 {margin:0;padding:0;text-indent:-12345px;}
 
 /***************************************
- Search box
+ Rounded Corners
+****************************************/
+.isRounded,.ir{-webkit-border-radius: 1em; -moz-border-radius: 1em;border-radius: 1em;}
+.hasRounded>*,.hr>*{-webkit-border-radius: 1em; -moz-border-radius: 1em;border-radius: 1em;}
+
+/***************************************
+ Transistions - not complete yet
+****************************************/
+.transition{-webkit-transition: all,0.5s;}
+
+/***************************************
+ Search box - not complete yet
 ****************************************/
 form.search
 {padding:1em 0;position:relative;}
@@ -79,14 +68,3 @@ form.search input#search
  -webkit-border-radius:0.5em;-moz-border-radius:0.5em;border-radius:0.5em;}
 form.search input.btn
 {width:20%;min-width:30px;margin:0 auto;}
-
-/***************************************
- Rounded Corners
-****************************************/
-.isRounded,.ir{-webkit-border-radius: 1em; -moz-border-radius: 1em;border-radius: 1em;}
-.hasRounded>*,.hr>*{-webkit-border-radius: 1em; -moz-border-radius: 1em;border-radius: 1em;}
-
-/***************************************
- Transistions
-****************************************/
-.transition{-webkit-transition: all,0.5s;}
