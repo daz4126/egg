@@ -42,6 +42,7 @@ background:#f9de02;color:#fffff3;
 display:block;
 padding: 0 1em;
 margin: 0 -1em;
+width:100%;
 }
 
 ul.tabs li a:hover
@@ -58,17 +59,12 @@ display:block;
 width:100%;
 }
 
-ul.tabs.vertical li a
-{
-width:100%;
-}
-
 
 /***************************************
  image replacement
 ****************************************/
 /*This will just hide the text, you will need to speciafy the background image separately. The width and height of the element should match the dimensions of the image*/
-.image-replacement
+.imageReplacement,.imgr
 {margin:0;padding:0;text-indent:-12345px;}
 
 /***************************************
@@ -87,8 +83,8 @@ form.search input.btn
 /***************************************
  Rounded Corners
 ****************************************/
-.isRounded{-webkit-border-radius: 1em; -moz-border-radius: 1em;border-radius: 1em;}
-.hasRounded>*{-webkit-border-radius: 1em; -moz-border-radius: 1em;border-radius: 1em;}
+.isRounded,.ir{-webkit-border-radius: 1em; -moz-border-radius: 1em;border-radius: 1em;}
+.hasRounded>*,.hr>*{-webkit-border-radius: 1em; -moz-border-radius: 1em;border-radius: 1em;}
 
 /***************************************
  Transistions

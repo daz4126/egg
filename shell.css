@@ -27,13 +27,19 @@ This stylesheet provides some classes to build flexible grid-based layouts.
 {float:left;margin:0 0 2.0408% 2.0408%;padding:0;zoom:1;}
 .row>*{margin-bottom:0;}
 /*Use to replace margins with padding instead, so columns have no gaps between them*/
-.grid.padded>*,.grid.padded .row>*{margin-left:0;padding-left:1.0204%;padding-right:1.0204%;position:relative;left:1.0204%;}
+.grid.xgutter>*,.grid.xgutter .row>*,.grid.xg>*,.grid.xg .row>*
+{margin-left:0;padding-left:1.0204%;padding-right:1.0204%;position:relative;left:1.0204%;}
 /*These make any columns with gaps line up*/
-.padded .g1,.padded .g2,.padded .g3,
-.padded .g4,.padded .g5,.padded .g6,
-.padded .g7,.padded .g8,.padded .g9,
-.padded .g10,.padded .g11,.padded .g12,
-.padded .g13,.padded .g14,.padded .g15
+.xgutter .g1,.xgutter .g2,.xgutter .g3,
+.xgutter .g4,.xgutter .g5,.xgutter .g6,
+.xgutter .g7,.xgutter .g8,.xgutter .g9,
+.xgutter .g10,.xgutter .g11,.xgutter .g12,
+.xgutter .g13,.xgutter .g14,.xgutter .g15,
+.xg .g1,.xg .g2,.xg .g3,
+.xg .g4,.xg .g5,.xg .g6,
+.xg .g7,.xg .g8,.xg .g9,
+.xg .g10,.xg .g11,.xg .g12,
+.xg .g13,.xg .g14,.xg .g15
 {left:-1.0204%;}
 /* These row styles have to come last to over-ride some other styles*/
 .grid .row{width:100%;margin-left:0;left:0;padding:0;}
@@ -131,16 +137,16 @@ img.right{float:right;margin:0 0 2% 2%;clear:both;}
 /*makes an element to start a new line*/
 .first{clear:left;}
 /*makes an element float right instead of left*/
-.grid>.right,.grid>.row>.right
+.grid>.right,.grid>.row>.right,.grid>.r,.grid>.row>.r
 {float:right;margin-left:0;margin-right:2.0408%;}
 /*makes an element span the whole width of a grid, with no margins*/
 .fullWidth
 {width:100%;margin:0;padding:0;clear:both;display:block;overflow:hidden;zoom:1;}
 /*makes an element the same height as its container*/
-.fullHeight
+.fullHeight,.fh
 {padding-bottom:12345px;margin-bottom:-12345px;}
 /*Makes child elements all the same height
 WARNING - use with caution and only if there is one row of elements
 */
-html body .equalHeight>*
+html body .equalHeight>*,html body .eh>*
 {padding-bottom:12345px;margin-bottom:-12345px;}
