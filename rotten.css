@@ -160,13 +160,13 @@ This stylesheet is used to fix the many things that are wrong with Internet Expl
 /*stops double margin bug on gaps*/
 .g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8,.g9,.g10,.g11,.g12,.g13,.g14,.g15{_display:inline;}
 /*resets the grandchildren and great grandchildren of grids*/
-* html .grid * *,* html .grid .row * *,* html .grid .grid * *,* html .grid .row .grid * *,* html .grid .row .grid .row * *
-{float:none;margin:auto;width:auto;display:inline-block;}
+.grid * *,.grid .row * *,.grid .grid * *,.grid .row .grid * *,.grid .row .grid .row * *
+{_float:none;_margin:0;_width:auto;_display:inline-block;}
 /*Fallback for second level nesting*/
-* html .grid .grid .grid *,* html .grid .row .grid .grid *,* html .grid .row .grid .row .grid *,* html .grid .grid .row .grid *
-{float:none;display:inline-block;
-width:auto;margin:0;padding:0}
+.grid .grid .grid *,.grid .row .grid .grid *,.grid .row .grid .row .grid *,.grid .grid .row .grid *
+{_float:none;_display:inline-block;
+_width:auto;_margin:0;_padding:0}
 
-/*grid and row need repeating to stop them being over-ridden*/
-.grid,.row{overflow:hidden;zoom:1;}
-.row{width:100%;margin-left:0;}
+/*grid and row need repeating from shell.css to stop them being over-ridden*/
+.grid,.row{_overflow:hidden;zoom:1;}
+.row{_width:100%;_margin-left:0;}
