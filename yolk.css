@@ -24,11 +24,11 @@ margin:0;padding:0;width:auto;}
 
 ul.tabs li
 {background:#fffff3;color:#369;line-height:2.4;
-display:inline;float:left;padding: 0 1em;}
+float:left;padding: 0 1em;}
 
 ul.tabs li a:link,ul.tabs li a, ul.tabs li a:visited
 {text-decoration:none;background:#f9de02;color:#fffff3;
-display:block;width:100%;
+display:inline-block;width:100%;
 padding: 0 1em;margin: 0 -1em;}
 
 ul.tabs li a:hover
@@ -36,7 +36,10 @@ ul.tabs li a:hover
 background:#369;color:#fffff3;}
 /* Add a class of 'vertical' or 'v' to make the tabs vertical*/
 ul.tabs.vertical li,ul.tabs.v li
-{clear:left;display:block;width:100%;}
+{clear:left;display:block;width:100%;_margin:0;_padding:0;}
+ul.tabs.vertical li a,ul.tabs.vertical li a:link,ul.tabs.vertical li a:visited,
+ul.tabs.v li a,ul.tabs.v li a:link,ul.tabs.v li a:visited
+{display:block;_text-indent:1em;_margin:0;_padding:0;}
 
 /***************************************
  image replacement
