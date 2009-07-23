@@ -26,12 +26,6 @@ This stylesheet is used to fix the many things that are wrong with Internet Expl
 /*nesting - only 2-levels currently and some break at small sizes*/
 .grid .grid *{float:left;margin-left:0.9%;_padding:1em 0;zoom:1;overflow:hidden;display:inline;}
 
-
-/*utility class fixes*/
-.equalHeight *,.eh *{_padding-bottom:12345px;_margin-bottom:-12345px;zoom:1;}
-.equalHeight * *,.eh * *{_padding-bottom:0;_margin-bottom:0}
-.grid .right,.grid .row .right,.grid .r,.grid .row .r{_float:right;_margin-left:0;_margin-right:2.04%;}
-
 /*  spans */
 .ten-col *,.ten-col .row *{_width:7.755%;}
 .ten-col .s2,.five-col *,.ten-col .row .s2,.five-col .row *{_width: 17.551%;}
@@ -166,6 +160,16 @@ This stylesheet is used to fix the many things that are wrong with Internet Expl
 .grid .grid .grid *,.grid .row .grid .grid *,.grid .row .grid .row .grid *,.grid .grid .row .grid *
 {_float:none;_display:inline-block;
 _width:auto;_margin:0;_padding:0}
+
+/*utility class fixes*/
+.equalHeight *,.grid .equalHeight *,
+.eh *,.grid .eh *
+{_padding-bottom:12345px;_margin-bottom:-12345px;zoom:1;}
+.equalHeight * *,.row .equalHeight * *,
+.eh * *,.row .eh * *
+{_padding-bottom:0;_margin-bottom:0}
+.grid .right,.grid .row .right,.grid .r,.grid .row .r
+{_float:right;_margin-left:0;_margin-right:2.04%;}
 
 /*grid and row need repeating from shell.css to stop them being over-ridden*/
 .grid,.row{_overflow:hidden;zoom:1;}
